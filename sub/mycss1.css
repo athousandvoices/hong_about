@@ -1,0 +1,32 @@
+* {
+    padding: 0; margin: 0; box-sizing: border-box;
+    -webkit-box-sizing: border-box; -moz-box-sizing:
+    border-box; 	-ms-box-sizing: border-box; -o-box-sizing:
+    border-box
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        height: auto;
+    }
+    ul {
+        list-style:none;
+        text-align:center;
+        border-top:5px solid white;
+        border-bottom:5px solid white; padding:10px;
+        box-shadow:0px 0px 10px #808080;
+    }
+    li {
+        font-family: 'Playfair Display', serif;
+        display:inline; /* 수평 리스트 */
+        text-transform:uppercase;
+        padding:25px; letter-spacing:10px; /* 간격 */
+    }
+    ul li a {
+        text-decoration:none;
+        color:black;
+    }
+    ul li a:hover {
+        /*text-decoration:underline;*/
+        text-shadow: 5px 5px 5px #808080;
+    }

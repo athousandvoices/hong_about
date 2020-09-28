@@ -1,0 +1,315 @@
+/* Reset */
+* {
+    padding: 0; margin: 0; box-sizing: border-box;
+    -webkit-box-sizing: border-box; -moz-box-sizing:
+    border-box; 	-ms-box-sizing: border-box; -o-box-sizing:
+    border-box
+    }
+
+    /* NanumSquareRound font import */
+    @font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; 
+    }
+
+    /* selection */
+    ::selection {
+        background:#252525;
+        color:#fff;
+    }
+
+    /* header */
+    .header {
+        position:fixed;
+        background-color: white;
+        display: block;
+        width: 100%;
+        height: 40px;
+        transition: top 0.2s ease-in-out;
+    }
+    .header_hid {
+        position: fixed;
+        background-color:white;
+        display: none;
+        width: 100%;
+        height: 40px;
+        z-index: 99999;
+        
+    }
+    .header_menu {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%)
+    }
+    .header, .header_hid {
+        /* z-index:0; */
+        list-style:none;
+        text-align:center;
+       
+        box-shadow:0px 0px 10px #d5d5d5;
+    }
+
+    .header_li {
+        margin: 0 30px;
+
+    }
+    .header_li, .header_home, .header_menu {
+        font-family: 'Open Sans', sans-serif;
+        display:inline;
+        text-transform:uppercase;
+        letter-spacing:15px; 
+    }
+
+   /* header list effct */
+   .header_ul li a {
+    text-decoration:none;
+    color:black;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+.header_ul li a:hover {
+    text-shadow: 3px 4px 5px #808080;                 
+}                       
+.header_home {
+    float: left;
+    margin: 0px;
+    padding:10px 0 0 15px
+}
+.header_menu {
+    position:inline-block;
+}
+.header_home a, .header_menu a {
+    text-decoration:none;
+    color:black;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+.header_home a:hover {
+    text-shadow: 3px 5px 5px #808080;                 
+} 
+.header_menu a:hover {
+    text-shadow: 3px 5px 5px #808080;              
+}
+
+/* header slide-up and down */
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:40px;
+    transition: top 0.2s ease-in-out;
+    z-index:99999;
+}
+
+[class*='header'] .inner {
+    position:relative;
+    z-index: 99999;
+    height:40px
+}
+
+.header .inner {
+    padding-top: 10px;
+
+}
+
+.header_hid .inner {
+    height:40px
+
+}
+
+
+.nav-up {
+    top:-45px; /* header up to 45px when scroll down */
+}
+.top {
+    top:-100px; /* header up to 100px when slide down */
+}
+
+/* header media query */
+@media(max-width:990px){
+    .header {
+        display:none;
+    }
+    .header_hid {
+        display:block;
+    }
+    .header_menu {
+        transition: 0.2s ease-out;
+        letter-spacing:25px;
+    }
+}
+@media(max-width:750px){
+    .header_menu {
+        transition: 0.2s ease-out;
+        letter-spacing:20px;
+    }
+}
+@media(max-width:600px){
+    .header_menu {
+        transition: 0.2s ease-out;
+        letter-spacing:15px;
+    }
+}
+@media(min-width:1200px){
+    .header_li {
+        transition: 0.2s ease-out;
+        letter-spacing:20px;
+    }
+}
+@media(min-width:1400px){
+    .header_li {
+        transition: 0.2s ease-out;
+        padding:10px; letter-spacing:20px;
+    }
+}
+@media(min-width:1600px){
+    .header_li {
+        transition: 0.2s ease-out;
+        padding:10px; letter-spacing:25px;
+    }
+}
+@media(min-width:1800px){
+    .header_li {
+        transition: 0.2s ease-out;
+        padding:15px; letter-spacing:25px;
+    }
+}
+@media(min-width:1920px){
+    .header_li {
+        transition: 0.2s ease-out;
+        padding:25px; letter-spacing:30px;
+    }
+}
+
+/* content background 1 */
+.section-01 {
+    background-image: url(../images/bonobono.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-01_bg {
+    position:absolute;
+    display:block;
+    width:100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+.section-01_bgtxt {
+    position:absolute;
+    display:block;
+    font-family: 'NanumSquareRound';
+    font-size:18px;
+    top:50%;
+    left:0;
+    width:100%;
+    color:#fafafa;
+    text-align:center;
+}
+
+/* content background 2 */
+.section-02 {
+    background-image: url(../images/computer.png);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-02_bg {
+    position:absolute;
+    display:block;
+    width:100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+.section-02_bgtxt {
+    position:absolute;
+    display:block;
+    font-family: 'NanumSquareRound';
+    font-size:18px;
+    top:50%;
+    left:0;
+    width:100%;
+    color:#fafafa;
+    text-align:center;
+}
+
+/* content background 3 */
+.section-03 {
+    background-image: url(../images/coding.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-03_bg {
+    position:absolute;
+    display:block;
+    width:100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+.section-03_bgtxt {
+    position:absolute;
+    display:block;
+    font-family: 'NanumSquareRound';
+    font-size:18px;
+    top:50%;
+    left:0;
+    width:100%;
+    color:#fafafa;
+    text-align:center;
+}
+
+/* content background 4 */
+.section-04 {
+    background-image: url(../images/tile.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-04_bg {
+    position:absolute;
+    display:block;
+    width:100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+.section-04_bgtxt {
+    position:absolute;
+    display:block;
+    font-family: 'NanumSquareRound';
+    font-size:18px;
+    top:50%;
+    left:0;
+    width:100%;
+    color:#fafafa;
+    text-align:center;
+}

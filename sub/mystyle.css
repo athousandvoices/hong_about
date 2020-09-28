@@ -1,0 +1,29 @@
+﻿h1 { 
+color : red ;
+}
+p {
+color : #0026ff ; 
+}
+/*
+body em {
+color : #f7cac9 ;
+}
+*/
+body > h2 {
+color : #92a8d1 ;
+}
+body > h3 {
+color : #92a8d1 ;
+}
+#em1 {
+color : #f7cac9 ;
+}
+#em2 {
+color : red ;
+}
+body > h4 {
+color : green ;
+}
+#em3 {
+color : red ;
+}
